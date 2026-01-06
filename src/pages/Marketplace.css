@@ -1,0 +1,149 @@
+.marketplace {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.marketplace-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.marketplace-header h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.marketplace-subtitle {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.marketplace-controls {
+  margin-bottom: 2rem;
+}
+
+.marketplace-search {
+  width: 100%;
+  padding: 1rem;
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 12px;
+  color: #f1f5f9;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.marketplace-search:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.marketplace-search::placeholder {
+  color: #64748b;
+}
+
+.marketplace-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-button {
+  padding: 0.75rem 1.5rem;
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-button:hover {
+  border-color: #6366f1;
+  color: #f1f5f9;
+}
+
+.filter-button.active {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border-color: transparent;
+  color: white;
+}
+
+.marketplace-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #475569;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #94a3b8;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .marketplace {
+    padding: 1rem;
+  }
+
+  .marketplace-header h1 {
+    font-size: 2rem;
+  }
+
+  .marketplace-subtitle {
+    font-size: 1rem;
+  }
+
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marketplace-filters {
+    flex-direction: column;
+  }
+
+  .filter-button {
+    width: 100%;
+  }
+}

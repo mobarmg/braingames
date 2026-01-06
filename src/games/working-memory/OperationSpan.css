@@ -1,0 +1,115 @@
+.ospan-equation .equation-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+  font-family: monospace;
+}
+
+.ospan-letter .letter-display {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #6366f1;
+  text-shadow: 0 0 40px rgba(99, 102, 241, 0.5);
+}
+
+.ospan-recall {
+  width: 100%;
+  max-width: 500px;
+}
+
+.recalled-display {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.recall-slot {
+  width: 50px;
+  height: 50px;
+  background: #0f172a;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6366f1;
+}
+
+.letter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.letter-btn {
+  padding: 1rem;
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.letter-btn:hover {
+  border-color: #6366f1;
+}
+
+.letter-btn.selected {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: white;
+}
+
+.recall-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.clear-btn {
+  padding: 0.75rem 2rem;
+  background: #334155;
+  border: none;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ospan-feedback {
+  text-align: center;
+}
+
+.ospan-feedback h3 {
+  color: #f1f5f9;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ospan-feedback p {
+  color: #94a3b8;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,38 @@
+.switch-stimulus {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.switch-stimulus.number {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+}
+
+.switch-stimulus.letter {
+  background: linear-gradient(135deg, #166534 0%, #22c55e 100%);
+}
+
+.switch-letter,
+.switch-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.switch-task-label {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.number-task {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.letter-task {
+  color: #22c55e;
+  font-weight: 600;
+}

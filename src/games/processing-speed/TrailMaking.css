@@ -1,0 +1,81 @@
+.trail-board {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  background: #0f172a;
+  border-radius: 16px;
+  border: 2px solid #334155;
+}
+
+.trail-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.trail-node {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  border: 3px solid;
+}
+
+.trail-node.number {
+  background: #1e293b;
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.trail-node.letter {
+  background: #1e293b;
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.trail-node:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.trail-node.visited {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: white;
+}
+
+.trail-hint {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.next-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .trail-board {
+    height: 400px;
+  }
+
+  .trail-node {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}

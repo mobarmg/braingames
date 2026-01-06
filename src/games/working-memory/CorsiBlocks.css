@@ -1,0 +1,56 @@
+.corsi-board {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  background: #0f172a;
+  border-radius: 16px;
+  border: 2px solid #334155;
+}
+
+.corsi-block {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.corsi-block:hover {
+  background: #475569;
+}
+
+.corsi-block.active {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.corsi-status {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  min-height: 2rem;
+}
+
+.corsi-status .correct {
+  color: #22c55e;
+}
+
+.corsi-status .incorrect {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .corsi-board {
+    height: 300px;
+  }
+
+  .corsi-block {
+    width: 45px;
+    height: 45px;
+  }
+}

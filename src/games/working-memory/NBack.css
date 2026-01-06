@@ -1,0 +1,129 @@
+.nback-display {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.nback-letter {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #6366f1;
+  text-shadow: 0 0 40px rgba(99, 102, 241, 0.5);
+}
+
+.nback-empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nback-feedback {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.nback-feedback.correct {
+  color: #22c55e;
+}
+
+.nback-feedback.incorrect {
+  color: #ef4444;
+}
+
+.nback-response-btn {
+  padding: 1rem 3rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nback-response-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.nback-response-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nback-example {
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.nback-example p {
+  margin-bottom: 1rem;
+  color: #94a3b8;
+}
+
+.example-sequence {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.example-sequence span {
+  padding: 0.5rem 1rem;
+  background: #1e293b;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.example-sequence span.target {
+  background: #22c55e;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.difficulty-selector {
+  margin: 2rem 0;
+}
+
+.difficulty-selector label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #94a3b8;
+}
+
+.level-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.level-btn {
+  padding: 0.75rem 1.5rem;
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.level-btn:hover {
+  border-color: #6366f1;
+}
+
+.level-btn.active {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border-color: transparent;
+  color: white;
+}

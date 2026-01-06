@@ -1,0 +1,87 @@
+.dual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.dual-cell {
+  background: #1e293b;
+  border-radius: 8px;
+  border: 2px solid #334155;
+  transition: all 0.2s;
+}
+
+.dual-cell.active {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+}
+
+.dual-responses {
+  display: flex;
+  gap: 2rem;
+}
+
+.dual-btn {
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.dual-btn.position {
+  background: #1e293b;
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.dual-btn.position.pressed {
+  background: #3b82f6;
+  color: white;
+}
+
+.dual-btn.audio {
+  background: #1e293b;
+  color: #22c55e;
+  border-color: #22c55e;
+}
+
+.dual-btn.audio.pressed {
+  background: #22c55e;
+  color: white;
+}
+
+.dual-results {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.result-section {
+  flex: 1;
+}
+
+.result-section h3 {
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .dual-grid {
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+  }
+
+  .dual-responses {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .dual-results {
+    flex-direction: column;
+  }
+}

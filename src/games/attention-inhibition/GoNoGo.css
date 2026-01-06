@@ -1,0 +1,66 @@
+.gonogo-stimulus {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.gonogo-stimulus:hover {
+  transform: scale(1.05);
+}
+
+.gonogo-stimulus.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.4);
+}
+
+.gonogo-stimulus.square {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+}
+
+.shape-examples {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.example span {
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.example-shape {
+  width: 60px;
+  height: 60px;
+}
+
+.example-shape.go-circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.example-shape.nogo-square {
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.go-shape {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.nogo-shape {
+  color: #ef4444;
+  font-weight: 600;
+}

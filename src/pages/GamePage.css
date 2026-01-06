@@ -1,0 +1,196 @@
+.game-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.game-page-header {
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  padding: 0.75rem 1.5rem;
+  background: #1e293b;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  border-color: #6366f1;
+  color: #f1f5f9;
+}
+
+.game-page-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.game-info {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #475569;
+  height: fit-content;
+}
+
+.game-info h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  color: #f1f5f9;
+}
+
+.game-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.game-category-badge,
+.game-difficulty-badge,
+.game-duration-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.game-category-badge {
+  background: #818cf8;
+  color: #1e293b;
+}
+
+.game-difficulty-badge {
+  background: #fbbf24;
+  color: #1e293b;
+}
+
+.game-duration-badge {
+  background: #4ade80;
+  color: #1e293b;
+}
+
+.game-description {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.game-benefits-section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #f1f5f9;
+}
+
+.game-benefits-section ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+.game-benefits-section li {
+  margin-bottom: 0.75rem;
+}
+
+.game-container {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #475569;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-placeholder {
+  text-align: center;
+  max-width: 600px;
+  padding: 3rem;
+}
+
+.game-placeholder h3 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  color: #6366f1;
+}
+
+.game-placeholder p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.game-placeholder ul {
+  text-align: left;
+  margin: 0 auto 2rem auto;
+  padding-left: 1.5rem;
+  color: #94a3b8;
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.game-placeholder li {
+  margin-bottom: 0.75rem;
+}
+
+.implementation-note {
+  font-style: italic;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.game-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.game-not-found h2 {
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+}
+
+.game-not-found button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.game-not-found button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .game-page-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-page {
+    padding: 1rem;
+  }
+
+  .game-info,
+  .game-container {
+    padding: 1.5rem;
+  }
+
+  .game-placeholder {
+    padding: 2rem 1rem;
+  }
+}
