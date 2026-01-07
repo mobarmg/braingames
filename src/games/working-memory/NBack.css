@@ -10,8 +10,7 @@
 .nback-letter {
   font-size: 8rem;
   font-weight: 700;
-  color: #6366f1;
-  text-shadow: 0 0 40px rgba(99, 102, 241, 0.5);
+  color: var(--color-primary);
 }
 
 .nback-empty {
@@ -28,28 +27,28 @@
 }
 
 .nback-feedback.correct {
-  color: #22c55e;
+  color: var(--color-success);
 }
 
 .nback-feedback.incorrect {
-  color: #ef4444;
+  color: var(--color-error);
 }
 
 .nback-response-btn {
   padding: 1rem 3rem;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: var(--color-primary);
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .nback-response-btn:hover:not(:disabled) {
+  background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
 }
 
 .nback-response-btn:disabled {
@@ -58,15 +57,16 @@
 }
 
 .nback-example {
-  background: #0f172a;
+  background: var(--color-bg-tertiary);
   border-radius: 12px;
   padding: 1.5rem;
   margin: 1.5rem 0;
+  border: 1px solid var(--color-border);
 }
 
 .nback-example p {
   margin-bottom: 1rem;
-  color: #94a3b8;
+  color: var(--color-text-secondary);
 }
 
 .example-sequence {
@@ -78,16 +78,18 @@
 
 .example-sequence span {
   padding: 0.5rem 1rem;
-  background: #1e293b;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
-  color: #cbd5e1;
+  color: var(--color-text-primary);
   font-family: monospace;
   font-size: 1rem;
 }
 
 .example-sequence span.target {
-  background: #22c55e;
-  color: #0f172a;
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
   font-weight: 600;
 }
 
@@ -98,7 +100,8 @@
 .difficulty-selector label {
   display: block;
   margin-bottom: 1rem;
-  color: #94a3b8;
+  color: var(--color-text-secondary);
+  font-weight: 500;
 }
 
 .level-buttons {
@@ -109,21 +112,22 @@
 
 .level-btn {
   padding: 0.75rem 1.5rem;
-  background: #1e293b;
-  border: 2px solid #334155;
-  border-radius: 8px;
-  color: #cbd5e1;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text-secondary);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .level-btn:hover {
-  border-color: #6366f1;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .level-btn.active {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  border-color: transparent;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }

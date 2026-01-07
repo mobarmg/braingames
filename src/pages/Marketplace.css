@@ -10,17 +10,15 @@
 }
 
 .marketplace-header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0 0 1rem 0;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-text-primary);
+  font-weight: 700;
 }
 
 .marketplace-subtitle {
-  font-size: 1.25rem;
-  color: #94a3b8;
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
   margin: 0;
 }
 
@@ -30,23 +28,25 @@
 
 .marketplace-search {
   width: 100%;
-  padding: 1rem;
-  background: #1e293b;
-  border: 2px solid #334155;
-  border-radius: 12px;
-  color: #f1f5f9;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-primary);
   font-size: 1rem;
   margin-bottom: 1.5rem;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow-sm);
 }
 
 .marketplace-search:focus {
   outline: none;
-  border-color: #6366f1;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .marketplace-search::placeholder {
-  color: #64748b;
+  color: var(--color-text-muted);
 }
 
 .marketplace-filters {
@@ -57,55 +57,58 @@
 }
 
 .filter-button {
-  padding: 0.75rem 1.5rem;
-  background: #1e293b;
-  border: 2px solid #334155;
-  border-radius: 8px;
-  color: #cbd5e1;
+  padding: 0.625rem 1.25rem;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text-secondary);
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
 }
 
 .filter-button:hover {
-  border-color: #6366f1;
-  color: #f1f5f9;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .filter-button.active {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  border-color: transparent;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
 .marketplace-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .stat-card {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  background: var(--color-bg-primary);
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
-  border: 1px solid #475569;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
 }
 
 .stat-value {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
-  color: #6366f1;
-  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
 }
 
 .stat-label {
   font-size: 0.875rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-weight: 500;
 }
 
 .games-grid {
@@ -118,7 +121,7 @@
 .no-results {
   text-align: center;
   padding: 4rem 2rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   font-size: 1.125rem;
 }
 
@@ -128,7 +131,7 @@
   }
 
   .marketplace-header h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .marketplace-subtitle {

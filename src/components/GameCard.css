@@ -1,19 +1,20 @@
 .game-card {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  background: var(--color-bg-primary);
   border-radius: 12px;
   padding: 1.5rem;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  border: 1px solid #475569;
+  border: 1px solid var(--color-border);
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-sm);
 }
 
 .game-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border-color: #646cff;
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
 }
 
 .game-card-header {
@@ -26,9 +27,9 @@
 
 .game-card-title {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  color: #f1f5f9;
+  color: var(--color-text-primary);
   flex: 1;
 }
 
@@ -37,7 +38,7 @@
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #1e293b;
+  color: white;
   white-space: nowrap;
 }
 
@@ -46,23 +47,23 @@
   justify-content: space-between;
   margin-bottom: 1rem;
   font-size: 0.875rem;
-  color: #94a3b8;
 }
 
 .game-card-category {
-  color: #818cf8;
+  color: var(--color-primary);
   font-weight: 500;
 }
 
 .game-card-duration {
-  color: #94a3b8;
+  color: var(--color-text-muted);
 }
 
 .game-card-description {
-  color: #cbd5e1;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: 1rem;
   flex: 1;
+  font-size: 0.9375rem;
 }
 
 .game-card-benefits {
@@ -72,14 +73,14 @@
 .game-card-benefits h4 {
   margin: 0 0 0.5rem 0;
   font-size: 0.875rem;
-  color: #e2e8f0;
+  color: var(--color-text-primary);
   font-weight: 600;
 }
 
 .game-card-benefits ul {
   margin: 0;
   padding-left: 1.25rem;
-  color: #94a3b8;
+  color: var(--color-text-muted);
   font-size: 0.875rem;
 }
 
@@ -91,16 +92,16 @@
 .game-card-button {
   width: 100%;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: var(--color-primary);
   color: white;
   border: none;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: background-color 0.2s;
   font-size: 0.875rem;
 }
 
 .game-card-button:hover {
-  opacity: 0.9;
+  background: var(--color-primary-dark);
 }

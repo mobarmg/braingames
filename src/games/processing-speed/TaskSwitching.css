@@ -2,16 +2,17 @@
   display: flex;
   gap: 1rem;
   padding: 2rem 3rem;
-  border-radius: 16px;
+  border-radius: 12px;
   margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
 }
 
 .switch-stimulus.number {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
 }
 
 .switch-stimulus.letter {
-  background: linear-gradient(135deg, #166534 0%, #22c55e 100%);
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
 }
 
 .switch-letter,
@@ -22,17 +23,18 @@
 }
 
 .switch-task-label {
-  font-size: 1.25rem;
-  color: #94a3b8;
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .number-task {
-  color: #3b82f6;
+  color: var(--color-primary);
   font-weight: 600;
 }
 
 .letter-task {
-  color: #22c55e;
+  color: var(--color-success);
   font-weight: 600;
 }

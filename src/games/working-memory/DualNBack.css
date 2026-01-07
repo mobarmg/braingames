@@ -7,15 +7,16 @@
 }
 
 .dual-cell {
-  background: #1e293b;
+  background: var(--color-bg-tertiary);
   border-radius: 8px;
-  border: 2px solid #334155;
+  border: 1px solid var(--color-border);
   transition: all 0.2s;
 }
 
 .dual-cell.active {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
 }
 
 .dual-responses {
@@ -25,33 +26,33 @@
 
 .dual-btn {
   padding: 1rem 2rem;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
-  border: 2px solid transparent;
+  border: 2px solid;
 }
 
 .dual-btn.position {
-  background: #1e293b;
-  color: #3b82f6;
-  border-color: #3b82f6;
+  background: var(--color-bg-primary);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .dual-btn.position.pressed {
-  background: #3b82f6;
+  background: var(--color-primary);
   color: white;
 }
 
 .dual-btn.audio {
-  background: #1e293b;
-  color: #22c55e;
-  border-color: #22c55e;
+  background: var(--color-bg-primary);
+  color: var(--color-success);
+  border-color: var(--color-success);
 }
 
 .dual-btn.audio.pressed {
-  background: #22c55e;
+  background: var(--color-success);
   color: white;
 }
 
@@ -66,8 +67,9 @@
 }
 
 .result-section h3 {
-  color: #f1f5f9;
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {

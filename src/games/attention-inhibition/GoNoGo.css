@@ -3,6 +3,7 @@
   height: 150px;
   cursor: pointer;
   transition: transform 0.1s;
+  box-shadow: var(--shadow-lg);
 }
 
 .gonogo-stimulus:hover {
@@ -12,13 +13,11 @@
 .gonogo-stimulus.circle {
   border-radius: 50%;
   background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-  box-shadow: 0 0 30px rgba(34, 197, 94, 0.4);
 }
 
 .gonogo-stimulus.square {
   border-radius: 12px;
   background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-  box-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
 }
 
 .shape-examples {
@@ -36,13 +35,14 @@
 }
 
 .example span {
-  color: #cbd5e1;
+  color: var(--color-text-secondary);
   font-weight: 500;
 }
 
 .example-shape {
   width: 60px;
   height: 60px;
+  box-shadow: var(--shadow-md);
 }
 
 .example-shape.go-circle {
@@ -56,11 +56,11 @@
 }
 
 .go-shape {
-  color: #22c55e;
+  color: var(--color-success);
   font-weight: 600;
 }
 
 .nogo-shape {
-  color: #ef4444;
+  color: var(--color-error);
   font-weight: 600;
 }

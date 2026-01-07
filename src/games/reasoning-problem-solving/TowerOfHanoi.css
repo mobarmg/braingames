@@ -30,7 +30,7 @@
 }
 
 .hanoi-tower.selected {
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   border-radius: 12px;
 }
 
@@ -39,7 +39,7 @@
   bottom: 45px;
   width: 12px;
   height: 180px;
-  background: linear-gradient(180deg, #64748b, #475569);
+  background: linear-gradient(180deg, #94a3b8, #64748b);
   border-radius: 6px 6px 0 0;
 }
 
@@ -48,7 +48,7 @@
   bottom: 35px;
   width: 180px;
   height: 14px;
-  background: linear-gradient(180deg, #64748b, #475569);
+  background: linear-gradient(180deg, #94a3b8, #64748b);
   border-radius: 7px;
 }
 
@@ -65,19 +65,19 @@
   height: 28px;
   border-radius: 6px;
   transition: all 0.2s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .hanoi-disk.selected {
   transform: translateY(-20px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-lg);
 }
 
 .tower-label {
   position: absolute;
   bottom: 0;
   font-size: 0.875rem;
-  color: #64748b;
+  color: var(--color-text-secondary);
   font-weight: 600;
 }
 
@@ -89,7 +89,7 @@
 .difficulty-selector label {
   display: block;
   margin-bottom: 1rem;
-  color: #94a3b8;
+  color: var(--color-text-secondary);
 }
 
 .level-buttons {
@@ -101,22 +101,23 @@
 
 .level-btn {
   padding: 0.75rem 1.5rem;
-  background: #1e293b;
-  border: 2px solid #334155;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
   border-radius: 8px;
-  color: #cbd5e1;
+  color: var(--color-text-primary);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
 }
 
 .level-btn:hover {
-  border-color: #6366f1;
+  border-color: var(--color-primary);
 }
 
 .level-btn.active {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  border-color: transparent;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 

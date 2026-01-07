@@ -36,10 +36,10 @@
   height: 100%;
   background: repeating-linear-gradient(
     45deg,
-    #334155 0,
-    #334155 10px,
-    #1e293b 10px,
-    #1e293b 20px
+    var(--color-bg-tertiary) 0,
+    var(--color-bg-tertiary) 10px,
+    var(--color-border) 10px,
+    var(--color-border) 20px
   );
   border-radius: 12px;
 }
@@ -59,7 +59,7 @@
 }
 
 .response-section h3 {
-  color: #f1f5f9;
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
   font-size: 1rem;
 }
@@ -72,22 +72,23 @@
 
 .center-btn {
   padding: 1rem 2rem;
-  background: #1e293b;
-  border: 2px solid #334155;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
   border-radius: 12px;
-  color: #cbd5e1;
+  color: var(--color-text-primary);
   font-size: 1.25rem;
   cursor: pointer;
   transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
 }
 
 .center-btn:hover {
-  border-color: #6366f1;
+  border-color: var(--color-primary);
 }
 
 .center-btn.selected {
-  background: #6366f1;
-  border-color: #6366f1;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
@@ -103,34 +104,41 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #1e293b;
-  border: 2px solid #334155;
-  color: #cbd5e1;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
+  color: var(--color-text-primary);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
   transform: translate(-50%, -50%);
+  box-shadow: var(--shadow-sm);
 }
 
 .peripheral-btn:hover {
-  border-color: #6366f1;
+  border-color: var(--color-primary);
 }
 
 .peripheral-btn.selected {
-  background: #6366f1;
-  border-color: #6366f1;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
 .submit-btn {
   padding: 1rem 3rem;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  background: var(--color-primary);
   border: none;
   border-radius: 12px;
   color: white;
   font-size: 1.125rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-md);
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: var(--color-primary-dark);
 }
 
 .submit-btn:disabled {
@@ -150,9 +158,9 @@
 }
 
 .feedback-item.correct {
-  color: #22c55e;
+  color: var(--color-success);
 }
 
 .feedback-item.incorrect {
-  color: #ef4444;
+  color: var(--color-error);
 }

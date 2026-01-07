@@ -3,9 +3,10 @@
   width: 100%;
   max-width: 600px;
   height: 500px;
-  background: #0f172a;
+  background: var(--color-bg-tertiary);
   border-radius: 16px;
-  border: 2px solid #334155;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
 }
 
 .trail-lines {
@@ -17,6 +18,10 @@
   pointer-events: none;
 }
 
+.trail-lines line {
+  stroke: var(--color-primary);
+}
+
 .trail-node {
   position: absolute;
   width: 45px;
@@ -25,46 +30,47 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   cursor: pointer;
   transform: translate(-50%, -50%);
   transition: all 0.2s;
   border: 3px solid;
+  background: var(--color-bg-primary);
+  box-shadow: var(--shadow-sm);
 }
 
 .trail-node.number {
-  background: #1e293b;
-  border-color: #3b82f6;
-  color: #3b82f6;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .trail-node.letter {
-  background: #1e293b;
-  border-color: #22c55e;
-  color: #22c55e;
+  border-color: var(--color-success);
+  color: var(--color-success);
 }
 
 .trail-node:hover {
   transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: var(--shadow-md);
 }
 
 .trail-node.visited {
-  background: #6366f1;
-  border-color: #6366f1;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: white;
 }
 
 .trail-hint {
-  font-size: 1.25rem;
-  color: #cbd5e1;
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
   margin-bottom: 1.5rem;
 }
 
 .next-value {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--color-warning);
   margin-left: 0.5rem;
 }
 

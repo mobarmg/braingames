@@ -3,45 +3,50 @@
   width: 100%;
   max-width: 500px;
   height: 400px;
-  background: #0f172a;
+  background: var(--color-bg-tertiary);
   border-radius: 16px;
-  border: 2px solid #334155;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
 }
 
 .corsi-block {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: #334155;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s;
   transform: translate(-50%, -50%);
+  box-shadow: var(--shadow-sm);
 }
 
 .corsi-block:hover {
-  background: #475569;
+  border-color: var(--color-primary);
 }
 
 .corsi-block.active {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
   transform: translate(-50%, -50%) scale(1.1);
 }
 
 .corsi-status {
-  font-size: 1.25rem;
-  color: #cbd5e1;
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
   margin-bottom: 2rem;
   min-height: 2rem;
+  font-weight: 500;
 }
 
 .corsi-status .correct {
-  color: #22c55e;
+  color: var(--color-success);
 }
 
 .corsi-status .incorrect {
-  color: #ef4444;
+  color: var(--color-error);
 }
 
 @media (max-width: 768px) {
