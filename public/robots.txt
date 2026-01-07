@@ -1,0 +1,11 @@
+# Brain Games - Cognitive Training Marketplace
+# https://braingames.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://braingames.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <circle cx="300" cy="315" r="150" fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+  <path d="M300 180 C240 180 220 220 220 260 C220 300 240 320 260 330 C250 350 240 380 250 410 C270 450 310 460 300 430 C290 460 330 450 350 410 C360 380 350 350 340 330 C360 320 380 300 380 260 C380 220 360 180 300 180" fill="url(#brainGrad)" transform="scale(1.5) translate(-100, -70)"/>
+  <text x="550" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#1e293b">Brain Games</text>
+  <text x="550" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="36" fill="#475569">Cognitive Training Marketplace</text>
+  <text x="550" y="450" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#64748b">12+ Scientific Games | Memory | Attention | Speed | Reasoning</text>
+  <rect x="550" y="490" width="180" height="50" rx="8" fill="#2563eb"/>
+  <text x="640" y="523" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">Play Now</text>
+</svg>

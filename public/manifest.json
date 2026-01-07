@@ -1,0 +1,21 @@
+{
+  "name": "Brain Games - Cognitive Training Marketplace",
+  "short_name": "Brain Games",
+  "description": "Train your brain with scientifically-designed cognitive games. Improve memory, attention, processing speed, and problem-solving skills.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "education", "health"],
+  "lang": "en",
+  "dir": "ltr"
+}
